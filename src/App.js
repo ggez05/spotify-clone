@@ -1,24 +1,24 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from "react";
+import { connect } from "react-redux";
 
-import './App.css';
+import "./App.scss";
 
-import { setToken } from './store/actions/sessionActions';
-import { fetchUser } from './store/actions/userActions';
+import { setToken } from "./store/actions/sessionActions";
+import { fetchUser } from "./store/actions/userActions";
 
-import Spinner from './components/spinner/spinner';
-import LeftSection from './containers/leftSection/leftSection';
-import MainSection from './containers/mainSection/mainSection';
-import RightSection from './containers/rightSection/rightSection';
+import Spinner from "./components/spinner/spinner";
+import LeftSection from "./containers/leftSection/leftSection";
+import MainSection from "./containers/mainSection/mainSection";
+import RightSection from "./containers/rightSection/rightSection";
 
-import Login from './spotify/login';
-import WebPlaybackReact from './spotify/webPlayback';
+import Login from "./spotify/login";
+import WebPlaybackReact from "./spotify/webPlayback";
 
 window.onSpotifyWebPlaybackSDKReady = () => {};
 
 class App extends Component {
   state = {
-    playerLoaded: false
+    playerLoaded: false,
   };
 
   componentDidMount() {
@@ -34,7 +34,7 @@ class App extends Component {
 
   render() {
     let webPlaybackSdkProps = {
-      playerName: 'Spotify React Player',
+      playerName: "Spotify React Player",
       playerInitialVolume: 1.0,
       playerRefreshRateMs: 1000,
       playerAutoConnect: true,
@@ -43,12 +43,12 @@ class App extends Component {
       onPlayerWaitingForDevice: () => {
         this.setState({ playerLoaded: true });
       },
-      onPlayerError: e => {
+      onPlayerError: (e) => {
         console.log(e);
       },
       onPlayerDeviceSelected: () => {
         this.setState({ playerLoaded: true });
-      }
+      },
     };
 
     return (
@@ -65,18 +65,15 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    token: state.sessionReducer.token
+    token: state.sessionReducer.token,
   };
 };
 
-const mapDispatchToProps = dispatch => ({
-  setToken: token => dispatch(setToken(token)),
-  fetchUser: () => dispatch(fetchUser())
+const mapDispatchToProps = (dispatch) => ({
+  setToken: (token) => dispatch(setToken(token)),
+  fetchUser: () => dispatch(fetchUser()),
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
