@@ -18,12 +18,8 @@
     "sass": "^1.56.2"
   },
   "scripts": {
-    "build-css": "sass --load-path=src src/:src/",
-    "watch-css": "yarn run build-css && sass -w --load-path=src src/:src/",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
-    "build-js": "react-scripts build",
-    "build": "npm-run-all build-css build-js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
