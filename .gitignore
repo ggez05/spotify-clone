@@ -25,5 +25,3 @@ yarn-error.log*
 .prettierrc.json
 src/**/*.css
 src/**/*.css.map
-
-package-lock.json
