@@ -1,0 +1,50 @@
+.browse-headers {
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 20px 20px 0px;
+}
+@media (max-width: 850px) {
+  .browse-headers {
+    display: grid;
+    text-align: right;
+  }
+  .browse-headers p {
+    display: inline;
+    margin-top: 10px !important;
+  }
+  .browse-headers .active {
+    border-bottom: 2px solid #1db954;
+  }
+  .browse-headers .active:after {
+    width: 0px;
+  }
+}
+@media (max-width: 850px) and (max-width: 700px) {
+  .browse-headers {
+    width: 98%;
+  }
+}
+.browse-headers .active {
+  position: relative;
+  border-bottom: 2px solid #1db954;
+  padding-bottom: 2px;
+}
+.browse-headers p {
+  color: rgb(179, 179, 179);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Proxima Nova", Georgia, sans-serif;
+  letter-spacing: 1px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.browse-headers p:first-child {
+  margin: 0 20px 0 0;
+}
+.browse-headers p:hover {
+  color: #fff;
+}
+
+/*# sourceMappingURL=browseHeader.css.map */

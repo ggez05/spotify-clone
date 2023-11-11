@@ -1,0 +1,130 @@
+.header-title {
+  font-size: 48px;
+  margin: 25px 0px;
+}
+.header-title.playlist {
+  margin: 0px;
+}
+
+.playlist-image-container.edit {
+  cursor: pointer;
+}
+.playlist-image-container.edit .fa {
+  display: none;
+}
+.playlist-image-container.edit:hover .playlist-image {
+  opacity: 0.6;
+}
+.playlist-image-container.edit:hover .fa {
+  position: absolute;
+  font-size: 58px;
+  z-index: 100;
+  left: 95px;
+  top: 90px;
+  display: block;
+}
+@media (max-width: 900px) {
+  .playlist-image-container.edit:hover {
+    height: 234px;
+  }
+  .playlist-image-container.edit:hover .fa {
+    position: relative;
+    font-size: 58px;
+    z-index: 100;
+    left: 5px;
+    top: -155px;
+    display: block;
+  }
+}
+.playlist-image-container .playlist-image {
+  width: 230px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.103), 0 6px 15px 0 rgba(0, 0, 0, 0.075);
+}
+
+.playlist-title-container {
+  display: flex;
+  padding-top: 15px;
+}
+@media (max-width: 900px) {
+  .playlist-title-container {
+    display: block;
+    text-align: center;
+  }
+  .playlist-title-container .playlist-info-container {
+    padding-left: 0px;
+  }
+  .playlist-title-container .btns-section {
+    display: block;
+  }
+  .playlist-title-container .btns-section div {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+  }
+  .playlist-title-container .btns-section div:last-of-type button {
+    margin-top: -10px;
+  }
+}
+
+.playlist-info-container {
+  padding-left: 20px;
+  position: relative;
+  top: 5px;
+  width: 100%;
+}
+.playlist-info-container .description,
+.playlist-info-container .followers,
+.playlist-info-container .created-by {
+  font-family: "Proxima Thin", Georgia, sans-serif;
+  font-size: 13px;
+}
+.playlist-info-container .description .artist-link,
+.playlist-info-container .followers .artist-link,
+.playlist-info-container .created-by .artist-link {
+  color: #fff;
+  cursor: default;
+}
+.playlist-info-container .description .artist-link:hover,
+.playlist-info-container .followers .artist-link:hover,
+.playlist-info-container .created-by .artist-link:hover {
+  text-decoration: underline;
+}
+.playlist-info-container .followers {
+  float: right;
+  text-align: right;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+@media (max-width: 900px) {
+  .playlist-info-container .followers {
+    float: none;
+    text-align: center;
+  }
+}
+.playlist-info-container .description {
+  margin: 0px;
+  margin-top: 10px;
+  color: #aaa;
+}
+.playlist-info-container .created-by {
+  margin-top: 10px;
+  color: #aaa;
+  padding: 8px 0;
+}
+.playlist-info-container .created-by .artist {
+  padding-bottom: 10px;
+}
+.playlist-info-container .lighter-text {
+  font-family: "Proxima Nova", Georgia, sans-serif;
+  color: #fff;
+}
+
+.playlist-text {
+  font-family: "Proxima Thin", Georgia, sans-serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin: 20px 0px 0px 0px;
+}
+
+/*# sourceMappingURL=playlistHeader.css.map */

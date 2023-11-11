@@ -1,0 +1,42 @@
+.left-section {
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  bottom: 10px;
+  width: 210px;
+  background-color: #0e0e10;
+}
+.left-section .side-menu-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -17px;
+  overflow-y: scroll;
+}
+.left-section .buttom-section {
+  text-align: center;
+  width: 210px;
+  position: fixed;
+  bottom: 75px;
+}
+.left-section .buttom-section .new-playlist {
+  height: 40px;
+  padding-top: 20px;
+  color: rgb(179, 179, 179);
+  background-color: #0e0e10;
+  border-top: 1px solid rgb(44, 44, 44);
+  font-family: "Proxima Thin", Georgia, sans-serif;
+}
+.left-section .buttom-section .new-playlist:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.left-section .buttom-section .new-playlist .fa {
+  padding-right: 5px;
+}
+
+/*# sourceMappingURL=leftSection.css.map */

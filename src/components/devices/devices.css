@@ -1,0 +1,115 @@
+.devices-container .overlay.active {
+  opacity: 0;
+}
+
+.devices {
+  position: fixed;
+  z-index: 1000000000;
+  background: #282828;
+  padding: 10px;
+  width: 230px;
+  bottom: 65px;
+  right: 89px;
+  min-height: 200px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0px 5px 5px -5px #000000;
+}
+.devices.hide {
+  display: none;
+}
+.devices .devices-header {
+  margin: 10px 0px;
+}
+.devices .devices-header h4 {
+  display: inline;
+  padding-right: 10px;
+}
+.devices .devices-header i {
+  float: right;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+.devices img {
+  width: 100%;
+}
+.devices .no-results {
+  font-size: 13px;
+  color: #ccc;
+  white-space: pre-wrap; /* CSS3 */
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -pre-wrap; /* Opera <7 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* IE */
+}
+.devices .no-results div {
+  margin: 15px 0px;
+}
+.devices .learn-more {
+  height: 25px;
+  width: 110px;
+  border-radius: 25px;
+  background-color: #0296e0;
+  border: 0px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.devices .learn-more:hover {
+  background-color: #23a6e8;
+}
+.devices .learn-more:active {
+  background-color: #045d8a;
+}
+.devices .triangle {
+  background: #282828;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 1;
+  bottom: -9px;
+  left: 0;
+  right: 0;
+  box-shadow: 4px 4px 7px -5px #000000;
+  margin: auto;
+  transform: rotate(45deg);
+}
+.devices .device {
+  display: flex;
+  padding: 10px 0px;
+}
+.devices .device:last-of-type {
+  margin-bottom: 20px;
+}
+.devices .device:hover {
+  background-color: #3a3939;
+}
+.devices .device .icon {
+  font-size: 40px;
+  width: 40px;
+  text-align: center;
+  margin-right: 12px;
+  padding-left: 10px;
+}
+.devices .device .details {
+  text-align: left;
+}
+.devices .device .details h4 {
+  font-size: 14px;
+  margin: 5px 0px 2px;
+}
+.devices .device .details span {
+  color: #aaa;
+  font-size: 11px;
+}
+.devices .device.active {
+  color: green;
+}
+.devices .device.active .fa {
+  color: green;
+}
+.devices .device.active span {
+  color: green;
+}
+
+/*# sourceMappingURL=devices.css.map */

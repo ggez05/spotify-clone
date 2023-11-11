@@ -1,0 +1,74 @@
+.browse-title {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  border-bottom: 1px solid #2d2c2c;
+}
+
+.browse-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+.browse-container .toplists {
+  width: 100%;
+}
+.browse-container .category-item {
+  padding: 10px;
+  list-style-type: none;
+  line-height: 28px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  width: 200px;
+  cursor: pointer;
+}
+.browse-container .category-item:hover .category-name {
+  border-bottom: 1px solid white;
+}
+.browse-container .category-item .category-image {
+  position: relative;
+}
+.browse-container .category-item .category-image img {
+  width: 100%;
+}
+.browse-container .category-item .category-image.playlist:hover {
+  opacity: 0.7;
+}
+.browse-container .category-item .category-image.playlist:active {
+  opacity: 0.3;
+}
+.browse-container .category-item .category-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  font-size: 15px;
+}
+.browse-container .album-artists {
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  color: #ccc;
+}
+.browse-container .album-title,
+.browse-container .album-artist {
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.browse-container .album-title:hover,
+.browse-container .album-artist:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/*# sourceMappingURL=browser.css.map */

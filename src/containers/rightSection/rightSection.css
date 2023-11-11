@@ -1,0 +1,19 @@
+.right-section {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 10px;
+  width: 210px;
+  background-color: #0e0e10;
+}
+.right-section .header {
+  position: fixed;
+  text-align: center;
+  width: 210px;
+  border-bottom: 1px solid rgba(58, 58, 58, 0.4901960784);
+}
+
+/*# sourceMappingURL=rightSection.css.map */
