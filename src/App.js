@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import "./App.scss";
+import "./App.css";
 
 import { setToken } from "./store/actions/sessionActions";
 import { fetchUser } from "./store/actions/userActions";
