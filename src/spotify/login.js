@@ -31,6 +31,9 @@ export default {
   },
 
   getToken: () => {
+    if (sessionStorage.getItem("spotify_token")) {
+      return sessionStorage.getItem("spotify_token");
+    }
     let hashParams = {};
     let e,
       r = /([^&;=]+)=?([^&;]*)/g,
@@ -39,6 +42,7 @@ export default {
       hashParams[e[1]] = decodeURIComponent(e[2]);
     }
     window.location.hash = "";
+    sessionStorage.setItem("spotify_token", hashParams.access_token);
     return hashParams.access_token;
   },
 };

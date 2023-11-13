@@ -45,6 +45,10 @@ class App extends Component {
       },
       onPlayerError: (e) => {
         console.log(e);
+        if (e === "Authentication failed") {
+          sessionStorage.clear();
+          Login.logInWithSpotify();
+        }
       },
       onPlayerDeviceSelected: () => {
         this.setState({ playerLoaded: true });

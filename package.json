@@ -3,6 +3,7 @@
   "version": "0.2.1",
   "private": true,
   "dependencies": {
+    "annyang": "^2.6.1",
     "axios": "^1.2.1",
     "moment": "^2.29.4",
     "node-sass": "^9.0.0",
@@ -11,6 +12,7 @@
     "react-dom": "^16.5.1",
     "react-drag-listview": "^0.2.1",
     "react-infinite-scroller": "^1.2.6",
+    "react-mic": "^12.4.6",
     "react-player-controls": "^1.1.0",
     "react-redux": "^5.0.7",
     "react-scripts": "^2.1.8",
